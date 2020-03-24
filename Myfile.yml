@@ -1,6 +1,6 @@
 ##
 ## EPITECH PROJECT, 2020
-## MUL_my_rpg_2019
+## MUL_my_defender_2019
 ## File description:
 ## This file describes the project's dependencies and allowed functions.
 ##
@@ -12,24 +12,89 @@ type: bin
 namespace: rpg
 
 dependencies:
+  - libgote=master
+  - libmy=master
   - @libcsfml-graphics
   - @libcsfml-audio
   - @libcsfml-system
-  - libgote=master
-  - libmy=master
   - @libm
 
 allowed:
-  - rand srand
-  - malloc free memset
-  - open close read write
-  - fopen fclose fread fwrite getline
-  - opendir readdir closedir
+  - malloc free memset memset rand srand getline open read close write fopen
+  - fread fclose fwrite opendir readdir closedir
 
 main: ./src/main.c
 
 src:
-  - ./src/rpg.c
+  - ./src/components/animation_comp.c
+  - ./src/components/health_comp.c
+  - ./src/components/input_comp.c
+  - ./src/components/rect_comp.c
+  - ./src/components/sprite_comp.c
+  - ./src/components/text_comp.c
+  - ./src/components/tile_comp.c
+  - ./src/components/xform_comp.c
+  - ./src/data/csv/destroy.c
+  - ./src/data/csv/load.c
+  - ./src/data/properties/destroy.c
+  - ./src/data/properties/get.c
+  - ./src/data/properties/load.c
+  - ./src/event_handler/event_handler.c
+  - ./src/render_queue/create_destroy.c
+  - ./src/render_queue/flush.c
+  - ./src/render_queue/push.c
+  - ./src/formats/path2d.c
+  - ./src/formats/font.c
+  - ./src/formats/texture.c
+  - ./src/formats/tileset.c
+  - ./src/game_entities/tilemap/create.c
+  - ./src/game_entities/tilemap/load.c
+  - ./src/states/death_state/death_events.c
+  - ./src/states/death_state/death_state.c
+  - ./src/states/death_state/death_ui.c
+  - ./src/states/dev/dev_state.c
+  - ./src/states/dev/sprite_dev_state.c
+  - ./src/states/gameplay_state/gameplay_entities.c
+  - ./src/states/gameplay_state/gameplay_events.c
+  - ./src/states/gameplay_state/gameplay_state.c
+  - ./src/states/gameplay_state/gameplay_ui.c
+  - ./src/states/pause_state/pause_events.c
+  - ./src/states/pause_state/pause_state.c
+  - ./src/states/pause_state/pause_ui.c
+  - ./src/states/splashscreen_state/splashscreen_events.c
+  - ./src/states/splashscreen_state/splashscreen_state.c
+  - ./src/states/title_state/title_events.c
+  - ./src/states/title_state/title_state.c
+  - ./src/states/title_state/title_ui.c
+  - ./src/states/root_state.c
+  - ./src/systems/input/event_process.c
+  - ./src/systems/input/input.c
+  - ./src/systems/rect_renderer/system.c
+  - ./src/systems/rect_renderer/system_run.c
+  - ./src/systems/sprite_renderer/system.c
+  - ./src/systems/sprite_renderer/system_run.c
+  - ./src/systems/text_renderer/system.c
+  - ./src/systems/text_renderer/system_run.c
+  - ./src/systems/animation.c
+  - ./src/systems/clear.c
+  - ./src/systems/health.c
+  - ./src/systems/render.c
+  - ./src/systems/tile.c
+  - ./src/systems/time.c
+  - ./src/systems/window.c
+  - ./src/systems/xform.c
+  - ./src/ui/widget/add_event_handler.c
+  - ./src/ui/widget/add_remove.c
+  - ./src/ui/widget/create.c
+  - ./src/ui/widget/destroy.c
+  - ./src/ui/widget/event.c
+  - ./src/ui/button.c
+  - ./src/ui/canvas.c
+  - ./src/ui/system/init_widget.c
+  - ./src/ui/system/layout.c
+  - ./src/ui/system/process_events.c
+  - ./src/ui/system/system.c
+  - ./src/ui/system/update_widget.c
 
 tests_src:
   - ./tests/main.c
