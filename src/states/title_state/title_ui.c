@@ -26,7 +26,7 @@ rpg_ui_widget_t *rpg_title_create_ui(gt_world_t *world)
 {
     rpg_ui_widget_t *root = rpg_ui_widget_create();
     rpg_ui_widget_t *play_btn = rpg_ui_button_create("NEW GAME");
-    rpg_ui_widget_t *sett_btn = rpg_ui_button_create("SETTINGS");
+    rpg_ui_widget_t *sett_btn = rpg_ui_button_create("HOW TO ?");
     rpg_ui_widget_t *quit_btn = rpg_ui_button_create("EXIT GAME");
 
     root->background = 0x888888FF;

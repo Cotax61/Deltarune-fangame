@@ -42,7 +42,7 @@ static gt_app_t *create_app(void)
         rpg_rect_rendering_system(),
         rpg_clear_system(0x000000FF),
         rpg_render_system(),
-        rpg_window_system("My Defender", 1280, 720),
+        rpg_window_system("My RPG", 1280, 720),
         rpg_input_handler_system()));
 }
 
