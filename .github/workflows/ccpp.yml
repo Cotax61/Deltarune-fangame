@@ -15,6 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Install CSFML
+        run: sudo apt-get install libcsfml-dev
+
       - name: Build project
         env:
           CC: gcc-9
@@ -29,6 +32,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Install CSFML
+        run: sudo apt-get install libcsfml-dev
+
       - uses: actions/cache@v1
         id: cache
         env:
@@ -36,9 +42,6 @@ jobs:
         with:
           path: ${{ runner.temp }}/Criterion
           key: ${{ runner.os }}-test-${{ env.cache-name }}
-
-      - name: Install CSFML
-        run: sudo apt-get install libcsfml-dev
 
       - name: Clone Criterion
         if: steps.cache.outputs.cache-hit != 'true'
