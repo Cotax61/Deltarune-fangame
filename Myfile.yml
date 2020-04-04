@@ -97,4 +97,3 @@ src:
   - ./src/ui/system/update_widget.c
 
 tests_src:
-  - ./tests/main.c
