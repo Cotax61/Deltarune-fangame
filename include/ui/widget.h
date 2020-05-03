@@ -35,6 +35,8 @@ struct rpg_ui_widget {
     hash_map_t *listeners;
     u32_t background;
     u32_t foreground;
+    u32_t border_color;
+    u32_t border_thickness;
     char *text;
     gt_handle_t font;
     u32_t font_size;

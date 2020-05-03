@@ -25,9 +25,9 @@ struct pause_state {
 static rpg_ui_widget_t *create_ui(gt_world_t *world)
 {
     rpg_ui_widget_t *root = rpg_ui_widget_create();
-    rpg_ui_widget_t *resume_btn = rpg_ui_button_create("Resume");
-    rpg_ui_widget_t *qtt_btn = rpg_ui_button_create("Quit to title");
-    rpg_ui_widget_t *quit_btn = rpg_ui_button_create("Quit game");
+    rpg_ui_widget_t *resume_btn = rpg_ui_button_create("");
+    rpg_ui_widget_t *qtt_btn = rpg_ui_button_create("");
+    rpg_ui_widget_t *quit_btn = rpg_ui_button_create("");
 
     root->background = 0x80;
     root->bounds = BOUNDS(0, 0, 0, 0);

@@ -26,12 +26,14 @@ static const struct {
     {&CANVAS_COMP, &gt_vec_storage},
     {&INPUT_COMP, &gt_vec_storage},
     {&ANIMATION_COMP, &gt_vec_storage},
+    {&FILL_BAR_COMP, &gt_vec_storage},
+    {&FIGHT_ACTION_COMP, &gt_vec_storage},
 };
 
 static gt_app_t *create_app(void)
 {
     return (gt_app_create(rpg_root_state(),
-        12,
+        14,
         rpg_animation_system(),
         rpg_time_system(),
         rpg_ui_system(),
@@ -42,7 +44,10 @@ static gt_app_t *create_app(void)
         rpg_rect_rendering_system(),
         rpg_clear_system(0x000000FF),
         rpg_render_system(),
+        rpg_fill_bar_system(),
+        rpg_act_button_renderer(),
         rpg_window_system("My RPG", 1280, 720),
+        rpg_fight_action_system(),
         rpg_input_handler_system()));
 }
 

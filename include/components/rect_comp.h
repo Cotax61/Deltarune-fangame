@@ -17,6 +17,8 @@ typedef struct {
     f64_t width;
     f64_t height;
     u32_t color;
+    u32_t border_thickness;
+    u32_t border_color;
 } rect_comp_t;
 
 rect_comp_t *rect_component(f64_t width, f64_t height, u32_t color);

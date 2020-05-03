@@ -45,6 +45,8 @@ static void on_start(struct gameplay_state *self, gt_world_t *data)
 static gt_state_trans_t update(struct gameplay_state *self,
     gt_world_t *data)
 {
+    (void) self;
+    (void) data;
     return (gt_state_trans_none());
 }
 

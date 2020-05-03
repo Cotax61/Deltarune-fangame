@@ -34,6 +34,8 @@ static void update_rect(rpg_ui_widget_t *widget, rpg_ui_sys_t *sys)
     rect->color = widget->background;
     rect->width = abs_bounds.right - abs_bounds.left;
     rect->height = abs_bounds.bottom - abs_bounds.top;
+    rect->border_color = widget->border_color;
+    rect->border_thickness = widget->border_thickness;
 }
 
 static void align_text(rpg_ui_widget_t *widget, text_comp_t *text)

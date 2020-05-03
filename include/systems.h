@@ -24,5 +24,8 @@ gt_system_t *rpg_input_handler_system(void);
 gt_system_t *rpg_enemy_system(void);
 gt_system_t *rpg_enemy_spawner_system(void);
 gt_system_t *rpg_animation_system(void);
+gt_system_t *rpg_fill_bar_system(void);
+gt_system_t *rpg_fight_action_system(void);
+gt_system_t *rpg_act_button_renderer(void);
 
 #endif /* RPG_WINDOW_SYSTEM_H */

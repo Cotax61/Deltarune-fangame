@@ -22,5 +22,7 @@ rect_comp_t *rect_component(f64_t width, f64_t height, u32_t color)
     comp->width = width;
     comp->height = height;
     comp->color = color;
+    comp->border_thickness = 0;
+    comp->border_color = 0x0;
     return (comp);
 }

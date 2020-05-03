@@ -49,7 +49,7 @@ static gt_state_trans_t update(void *self, gt_world_t *data)
 {
     (void)(self);
     (void)(data);
-    return (gt_state_trans_push(rpg_sscreen_state()));
+    return (gt_state_trans_push(rpg_fight_state()));
 }
 
 static void on_stop(void *self, gt_world_t *data)

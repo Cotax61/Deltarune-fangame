@@ -9,7 +9,9 @@
 #define RPG_UI_H
 
 #include "rpg/ui/button.h"
+#include "rpg/ui/label.h"
 #include "rpg/ui/canvas.h"
 #include "rpg/ui/widget.h"
+#include "rpg/ui/fight_button.h"
 
 #endif /* RPG_UI_H */

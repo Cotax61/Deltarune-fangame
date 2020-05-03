@@ -34,6 +34,8 @@ src:
   - ./src/components/text_comp.c
   - ./src/components/tile_comp.c
   - ./src/components/xform_comp.c
+  - ./src/components/fill_bar_comp.c
+  - ./src/components/fight_action.c
   - ./src/data/csv/destroy.c
   - ./src/data/csv/load.c
   - ./src/data/properties/destroy.c
@@ -49,6 +51,7 @@ src:
   - ./src/formats/tileset.c
   - ./src/game_entities/tilemap/create.c
   - ./src/game_entities/tilemap/load.c
+  - ./src/game_entities/fight/player.c
   - ./src/states/death_state/death_events.c
   - ./src/states/death_state/death_state.c
   - ./src/states/death_state/death_ui.c
@@ -66,7 +69,13 @@ src:
   - ./src/states/title_state/title_events.c
   - ./src/states/title_state/title_state.c
   - ./src/states/title_state/title_ui.c
+  - ./src/states/fight/fight_ui.c
+  - ./src/states/fight/fight_ui_bar.c
+  - ./src/states/fight/fight.c
   - ./src/states/root_state.c
+  - ./src/systems/fight/fight_evt.c
+  - ./src/systems/fight/fight_action.c
+  - ./src/systems/fight/button_renderer.c
   - ./src/systems/input/event_process.c
   - ./src/systems/input/input.c
   - ./src/systems/rect_renderer/system.c
@@ -83,6 +92,7 @@ src:
   - ./src/systems/time.c
   - ./src/systems/window.c
   - ./src/systems/xform.c
+  - ./src/systems/fill_bar.c
   - ./src/ui/widget/add_event_handler.c
   - ./src/ui/widget/add_remove.c
   - ./src/ui/widget/create.c
@@ -90,6 +100,9 @@ src:
   - ./src/ui/widget/event.c
   - ./src/ui/button.c
   - ./src/ui/canvas.c
+  - ./src/ui/menu_button/menu_button.c
+  - ./src/ui/menu_button/events.c
+  - ./src/ui/menu_button/labels.c
   - ./src/ui/system/init_widget.c
   - ./src/ui/system/layout.c
   - ./src/ui/system/process_events.c
@@ -97,3 +110,4 @@ src:
   - ./src/ui/system/update_widget.c
 
 tests_src:
+  - ./tests/main.c

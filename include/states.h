@@ -18,5 +18,6 @@ gt_state_t *rpg_gameplay_state(void);
 gt_state_t *rpg_sscreen_state(void);
 gt_state_t *rpg_pause_state(void);
 gt_state_t *rpg_death_state(void);
+gt_state_t *rpg_fight_state(void);
 
 #endif /* RPG_STATES_H */

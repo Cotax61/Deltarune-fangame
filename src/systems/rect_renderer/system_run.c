@@ -33,6 +33,10 @@ static void render_callback(void *ptr)
     struct render_data *data = ptr;
     sfRenderStates rstates = {sfBlendAlpha, sfTransform_Identity, NULL, NULL};
 
+    sfRectangleShape_setOutlineThickness(data->shape, 
+        data->rect->border_thickness);
+    sfRectangleShape_setOutlineColor(data->shape, 
+        sfColor_fromInteger(data->rect->border_color));
     sfRectangleShape_setFillColor(data->shape,
         sfColor_fromInteger(data->rect->color));
     sfRectangleShape_setSize(data->shape, (sfVector2f) {
